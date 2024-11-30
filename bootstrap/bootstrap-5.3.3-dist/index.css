@@ -1,0 +1,124 @@
+/* ทั่วไป */
+body {
+    background: linear-gradient(45deg, #0d47a1 25%, #1976d2 25%, #1976d2 50%, #0d47a1 50%, #0d47a1 75%, #1976d2 75%, #1976d2);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* สีข้อความ */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* แถบนำทาง */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #3094ff;
+    color: white;
+    /* ตกแต่งเพิ่ม */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับ navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* ทำให้ navbar อยู่เหนือเนื้อหา */
+    box-sizing: border-box; /* ทำให้ขนาดรวม padding ไม่ทำให้เกินขนาด  ไม่ติดจอขวา*/
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+}
+/* เมนู */
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar .menu li {
+    margin: 0 1.5rem;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    /* ตกแต่งเพิ่ม */
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s , transform 0.3s;
+}
+
+.navbar .menu a:hover {
+    color: #333;
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+}
+
+/* เพิ่มเอฟเฟกต์สำหรับเมนู */
+.navbar .menu a:active {
+    color: #0454a8;
+}
+
+/* ส่วนท้าย */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาด้านล่าง */
+}
+footer .social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    transition: color 0.3s , transform 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #3794f7;
+}
+
+
+.social-icon {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #555;
+    
+}
+/* สีสำหรับแต่ละ Social Media */
+.social-icon.facebook:hover {
+    background-color: #2d4373;
+}
+
+.social-icon.twitter:hover {
+    background-color: #0084b4;
+}
+
+.social-icon.instagram:hover {
+    background-color: #c13584;
+}
